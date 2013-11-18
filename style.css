@@ -58,6 +58,7 @@ body {
 }
 
 #black{
+	transition: 1s;
 	display: none;
 	position: absolute;
 	top:0px;
@@ -81,4 +82,14 @@ body {
 	height:920px;
 	border: none;
 	-webkit-transform: scale(0.7, 0.7);
+}
+#Sproj1{
+	width:450px;
+	height:354px;
+	border: none;
+}
+#Sproj2{
+	width:960px;
+	height:576px;
+	border: none;
 }

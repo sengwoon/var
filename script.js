@@ -54,15 +54,28 @@ function init(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<iframe src="source/Sproj1/brush.html" id="Sproj1"></iframe>';
+			pop.style.marginLeft = "-225px";
+			pop.style.marginTop = "-177px";
 		}
 	};
 	btnS2.onclick = function(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<iframe src="source/Sproj2/wonderland.html" id="Sproj2"></iframe>';
+			pop.style.marginLeft = "-480px";
+			pop.style.marginTop = "-288px";
 		}
 	};
 	btnClose.onclick = function(){
+		if(BG.style.display!="none"){
+			BG.style.display="none";
+			pop.style.display="none";
+			pop.innerHTML = '';
+		}
+	};
+	BG.onclick = function(){
 		if(BG.style.display!="none"){
 			BG.style.display="none";
 			pop.style.display="none";
