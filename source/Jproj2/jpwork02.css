@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+#blue {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 100px;
+    top: 200px;
+   
+}
+
+#red {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 140px;
+    top: 200px;
+}
+
+#green {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    left: 120px;
+    top: 200px;
+
+}
+
+#clear {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 100px;
+    top: 230px;
+
+}
+.slider {
+    position:absolute;
+    display: inline-block;
+     left: 250px;
+    top: 100px;
+
+}

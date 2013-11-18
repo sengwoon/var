@@ -42,12 +42,18 @@ function init(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<iframe src="source/Jproj1/index.html" id="Jproj1"></iframe>';
+			pop.style.marginLeft = "-285px";
+			pop.style.marginTop = "-177px";
 		}
 	};
 	btnJ2.onclick = function(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<iframe src="source/Jproj2/index.html" id="Jproj2"></iframe>';
+			pop.style.marginLeft = "-100px";
+			pop.style.marginTop = "-135px";
 		}
 	};
 	btnS1.onclick = function(){
