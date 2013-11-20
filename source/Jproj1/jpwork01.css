@@ -1,0 +1,39 @@
+body{background: #232323;}
+
+.sky{
+  margin:80px 130px;
+  
+  -webkit-transform: scale(2); 
+  position:absolute;
+  width: 285px;
+  height: 177px;
+
+  background: url("http://i.imgur.com/Arxfcb8.jpg");
+  
+}
+
+
+
+
+.pigeon { margin: auto;
+   -webkit-transform: scale(0.5); 
+    width: 140px;
+    height: 100px;
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:15px;
+    background-image: url("http://i.imgur.com/LwVqwOu.png");
+    
+    -webkit-animation: play .8s steps(16) infinite
+
+}
+
+
+
+@-webkit-keyframes play {
+  from { background-position:    0px; }
+     to { background-position:  -2240px; }
+}
+
+
