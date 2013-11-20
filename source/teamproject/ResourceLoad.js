@@ -1,6 +1,3 @@
-var countLoaded = 0;
-var totalResource = 17;
-
 function addImg(fileName){
  	var img = new Image();
 	img.src = fileName;
@@ -10,7 +7,9 @@ function addImg(fileName){
 
 function loadChck(){
 	countLoaded ++;
+	LoadState();
 	if( countLoaded==(totalResource) ){
+		LoadState();
 		gameInit();
 	}
 };

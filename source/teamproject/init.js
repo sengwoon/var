@@ -2,6 +2,8 @@
 window.addEventListener("load", Load, false);
 window.addEventListener("keydown", onkeydown, false);
 window.addEventListener("keyup", onkeyup, false);
+var countLoaded = 0;
+var totalResource = 17;
 //이미지 변수 전역으로 선언
 var imgMap;
 var imgPlayerFront, imgPlayerRight, imgPlayerLeft;
@@ -27,10 +29,8 @@ var keyRight = false;
 var soundArr = new Array();
 var bgmReady = new Audio();
 bgmReady.src = "sound/bgm_ready.mp3";
-//document.body.appendChild(bgmReady);
 var bgmPlay = new Audio();
 bgmPlay.src = "sound/bgm_play.mp3";
-//document.body.appendChild(bgmPlay);
 var bgmEnd = new Audio();
 bgmEnd.src = "sound/bgm_end.mp3";
 
@@ -121,6 +121,13 @@ function BGM(){
 	}
 }
 function Load(){
+	document.body.appendChild(bgmReady);
+	document.body.appendChild(bgmPlay);
+	document.body.appendChild(bgmEnd);
+
+	theCanvas = document.getElementById("GameCanvas");
+	Context = theCanvas.getContext("2d");
+
 	imgMap = addImg("img/map.jpg");
 	imgPlayerFront = addImg("img/sparrowsprit.png");
 	imgPlayerRight = addImg("img/sparrowspritRturn.png");
@@ -138,13 +145,20 @@ function Load(){
 	sprBlast = addImg("img/bloodeffect.png");
 	imgWarn = addImg("img/npc_obstacle_warn.png");
 	imgObstacle = addImg("img/npc_obstacle.png");
+
+	LoadState();
+}
+function LoadState(){
+	Context.clearRect(0, 0, 760, 920);
+	Context.fillStyle = "#ffffff";
+	Context.font="20px Arial";
+	Context.fillText("Now Loading...", theCanvas.width/2-50, theCanvas.height/2);
+	Context.fillText( Math.floor(countLoaded / totalResource * 100)+"%" , theCanvas.width/2-10, theCanvas.height/2+25);
 }
 
 function gameInit(){
 	document.title = "V.A.R. Bird";
-	theCanvas = document.getElementById("GameCanvas");
-	Context = theCanvas.getContext("2d");
-	
+
 	FPS = 60;
 	state = new ReadyState();
 	state.Init();

@@ -7,9 +7,7 @@ ReadyState.prototype.Init = function (){
 	soundArr.push( {name:"bgm_ready", sound:bgmReady, isPlaying:false} );
 	for(var i=0; i<soundArr.length; i++){
 		if(soundArr[i].name == "bgm_ready"){
-			if(soundArr[i].isPlaying==false){
-				soundArr[i].sound.currentTime = 0;
-			}
+			soundArr[i].sound.currentTime = 0;
 			soundArr[i].sound.play();
 			soundArr[i].sound.loop = true;
 		}

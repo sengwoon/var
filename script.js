@@ -30,12 +30,18 @@ function init(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<div id="Hproj1">준비중입니다.</div>';
+			pop.style.marginLeft = "-100px";
+			pop.style.marginTop = "-25px";
 		}
 	};
 	btnH2.onclick = function(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
+			pop.innerHTML = '<div id="Hproj2">준비중입니다.</div>';
+			pop.style.marginLeft = "-100px";
+			pop.style.marginTop = "-25px";
 		}
 	};
 	btnJ1.onclick = function(){

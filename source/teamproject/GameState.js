@@ -176,7 +176,7 @@ GameState.prototype.Update = function (){
 			this.bombFrame += (1000/FPS);
 			if(this.bombFrame>800){
 				for(var i=0; i<this.npc.arrNPC.length; i++){
-					if((this.npc.arrNPC[i].x>100)&&(this.npc.arrNPC[i].x<theCanvas.width+100)&&(this.npc.arrNPC[i].y>-200)&&(this.npc.arrNPC[i].y<theCanvas.height)){
+					if((this.npc.arrNPC[i].x>-100)&&(this.npc.arrNPC[i].x<theCanvas.width+100)&&(this.npc.arrNPC[i].y>-200)&&(this.npc.arrNPC[i].y<theCanvas.height)){
 						this.npc.arrBlast.push( {x:this.npc.arrNPC[i].x, y:this.npc.arrNPC[i].y, frame:0} );
 						this.score += 100;
 						this.npc.arrNPC.splice(i,1);
