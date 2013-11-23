@@ -30,18 +30,18 @@ function init(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
-			pop.innerHTML = '<div id="Hproj1">준비중입니다.</div>';
-			pop.style.marginLeft = "-100px";
-			pop.style.marginTop = "-25px";
+			pop.innerHTML = '<iframe src="source/Hproj1/rect.html" id="Hproj1"></iframe>';
+			pop.style.marginLeft = "-535px";
+			pop.style.marginTop = "-280px";
 		}
 	};
 	btnH2.onclick = function(){
 		if(BG.style.display!="block"){
 			BG.style.display="block";
 			pop.style.display="block";
-			pop.innerHTML = '<div id="Hproj2">준비중입니다.</div>';
-			pop.style.marginLeft = "-100px";
-			pop.style.marginTop = "-25px";
+			pop.innerHTML = '<iframe src="source/Hproj2/brush.html" id="Hproj2"></iframe>';
+			pop.style.marginLeft = "-300px";
+			pop.style.marginTop = "-125px";
 		}
 	};
 	btnJ1.onclick = function(){

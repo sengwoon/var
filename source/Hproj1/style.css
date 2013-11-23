@@ -1,0 +1,16 @@
+body {
+	background-color: rgb(110, 255, 124);
+}
+
+#box {
+    position: absolute;
+    width: 1070px;
+    height: 560px;
+    left: 0px;
+    top: 0px;
+    background: rgb(110, 255, 200);
+}
+
+#box:active {
+    background-color: rgb(110, 255, 255);
+}
